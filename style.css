@@ -4,6 +4,7 @@ body {
   box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
   background-color: var(--blue);
+  text-transform: lowercase;
 }
 
 * {
@@ -19,6 +20,8 @@ body {
   --blue: #75a5fd;
   --green: #baf5f9;
 }
+
+/* NAVBAR STYLING */
 
 header {
   width: 100%;
@@ -48,10 +51,57 @@ header > .contents > .links a{
   font-weight: light;
 }
 
-
+header > .contents > .links a:hover {
+  background-color: var(--green);
+  color: var(--greyv2);
+  transition: all 0.5s ease;
+}
 
 header > .mobile_links {
   display: none;
+}
+
+/* FOOTER STYLING */
+
+footer {
+  position: absolute;
+  bottom: 0;
+  height: auto;
+  width: 100%;
+  background: var(--greyv2);
+  font-size: 1em;
+}
+
+footer > .contents{
+  height: auto;
+  align-items: center;
+  margin: 3vh 0vh;
+  font-weight: light;
+}
+
+
+
+footer > .contents > .socials {
+  display: flex;
+  justify-content: center;
+}
+
+footer > .contents > .socials a{
+  margin: 0vh 2vh;
+  border: 2px solid var(--blue);
+  padding: 1vh 3vh;
+  border-radius: 2vh;
+}
+
+footer > .contents > .socials a:hover {
+  background-color: var(--green);
+  color: var(--greyv2);
+  transition: all 0.5s ease;
+}
+
+footer > .contents > .text {
+  padding: 3vh 0vh;
+  text-align: center;
 }
 
 @media only screen and (max-width: 1400px) {
@@ -106,6 +156,12 @@ header > .mobile_links {
     border-radius: 2vh;
   }
 
+  header > .mobile_links a:hover {
+    background-color: var(--green);
+    color: var(--greyv2);
+    transition: all 0.5s ease;
+  }
+
   header > .mobile_links hr {
     height: 2px;
     border-radius: 10px;
@@ -113,6 +169,16 @@ header > .mobile_links {
     border: none;
     margin: 2vh 5vh;
     width: 100;
+  }
+
+  footer > .contents > .socials {
+    display: grid;
+    
+  }
+
+  footer > .contents > .socials a {
+    margin: 2vh 0vh;
+    text-align: center;
   }
 
 }
