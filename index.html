@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <title>olliecodes</title>
+</head>
+<body>
+  <main>
+    
+    <header>
+      <div class="contents">
+        <div class="logo"><a href="#">olliecodes</a></div>
+        <div class="hamburger" id="hamburger">
+          <span class="bar1"></span>
+          <span class="bar2"></span>
+          <span class="bar3"></span>
+        </div>
+        <div class="links">
+          <a href="#">Home</a>
+          <a href="#">About Me</a>
+          <a href="#">Services</a>
+        </div>
+      </div>
+
+      <div class="mobile_links" id="mobile_menu">
+        <a href="#">Home</a>
+        <a href="#">About Me</a>
+        <a href="#">Services</a>
+        <hr></hr>
+      </div>
+
+
+  </main>
+
+  <script>
+    document.getElementById("hamburger").addEventListener("click", openMenu);
+
+    function openMenu () {
+      var x = document.getElementById("mobile_menu");
+      x.classList.toggle('show')
+    }
+  </script>
+</body>
+</html>
